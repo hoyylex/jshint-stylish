@@ -12,7 +12,7 @@ Compared to the default reporter:
 ## Install
 
 ```sh
-$ npm install --save-dev jshint-stylish
+$ npm install --save-dev git+https://git@github.com/hoyylex/jshint-stylish.git
 ```
 
 
