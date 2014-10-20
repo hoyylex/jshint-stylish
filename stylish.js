@@ -26,8 +26,8 @@ module.exports = {
 
       var line = [
         '',
-        chalk.gray('line ' + err.line),
-        chalk.gray('col ' + err.character),
+        chalk.cyan('line ' + err.line),
+        chalk.cyan('col ' + err.character),
         isError ? chalk.red(err.reason) : (process.platform !== 'win32' ? chalk.blue(err.reason) : chalk.cyan(err.reason))
       ];
 
@@ -36,7 +36,7 @@ module.exports = {
       }
 
       if (options.verbose) {
-        line.push(chalk.gray('(' + err.code + ')'));
+        line.push(chalk.cyan('(' + err.code + ')'));
       }
 
       if (isError) {
